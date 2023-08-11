@@ -31,8 +31,8 @@ jobs:
       uses: bankfliptech/deploy-to-render@v1.0.2
       with:
         # The deploy hook url for the service you want to deploy
-        deployHookURL: ${{secrets.API_KEY}}
+        deployHookURL: ${{secrets.DEPLOYHOOKURL}}
         # Your personal API key to interact with Render
-        apiKey: ${{secrets.DEPLOYHOOKURL}}
+        apiKey: ${{secrets.API_KEY}}
         # The serviceId of the service you want to deploy
         serviceId: ${{secrets.SERVICE_ID}}
